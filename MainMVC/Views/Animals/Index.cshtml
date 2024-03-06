@@ -1,0 +1,12 @@
+@model List<MainMVC.Entities.AnimalsTb>
+
+    <H1>List</H1>
+
+    <ol>
+        @foreach(var animal in Model)
+        {
+            <li>Name:@animal.Name</li>
+            <li>Description:@animal.Description</li>
+            <li>Status:@animal.Status</li>
+        }
+    </ol>
